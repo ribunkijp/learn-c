@@ -1,5 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-	printf("hfdsf");
+	printf("hello\n%12f", 2025.0);
 }
+
