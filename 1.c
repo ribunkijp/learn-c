@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 
 
@@ -16,6 +16,16 @@ int main(void) {
 	}*/
 
 	// printf("%d %d", height, z);
-	float a = 6.0 / 5;
-	printf("%*.*f", 5, 3, a);
+	//float a = 6.0 / 5;
+	//printf("%*.*f", 6, 3, a);
+	//printf("%12.3f", a);
+	int a = 30;
+	//a = (a / 100.0) * 10;
+	/*int b = 10;
+	b = ++a + 10;
+	printf("%d", b);*/
+	if (!(a < 40)) {
+		printf("true");
+	}
+
 }
