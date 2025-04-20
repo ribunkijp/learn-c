@@ -29,14 +29,14 @@
 //    return 0;
 //}
 
-void decimal_to_binary(int n) {
-	if (n > 1) {
-		decimal_to_binary(n / 2);  // 再帰的に2で割り続ける
-	}
-	printf("%d", ~n % 2);  // 余りを表示（最下位ビットから順に表示される）
-}
-
-int main(void) {
+//void decimal_to_binary(int n) {
+//	if (n > 1) {
+//		decimal_to_binary(n / 2);  // 再帰的に2で割り続ける
+//	}
+//	printf("%d", ~n % 2);  // 余りを表示（最下位ビットから順に表示される）
+//}
+//
+//int main(void) {
 	
 
 
@@ -52,13 +52,13 @@ int main(void) {
 
 		printf("元の値: %u\n", num);
 		printf("反転後: %u\n", result);*/
-	const char* str_val = "0010";
+	/*const char* str_val = "0010";
 	unsigned long int dev_val = strtol(str_val, NULL, 2);
 	dev_val = ~dev_val & 0x0F;
-	dev_val = dev_val & 10;
+	dev_val = dev_val | 10;
 	printf("%lu\n", dev_val);
 
-	return 0;
+	return 0;*/
 	
 	
 	//printf("%d", num);
@@ -66,6 +66,16 @@ int main(void) {
 	//decimal_to_binary(num);
 	/*num = ~num;
 	printf(num);*/
+	/*int i = 9;
+	if (i > 10) {
+		printf("%s", ">>10");
+	}
+	else {
+		printf("%s", "<<10");
+
+	}*/
+	int i = 9;
+	i > 10 ? printf("%s", ">>10") : printf("%s", "<<10");
 	
 	return 0;
 	
