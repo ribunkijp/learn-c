@@ -1,6 +1,6 @@
 # learn-c
 
-###　10進数 to 2進数
+### 10進数 to 2進数
 
 ```c
 #include <stdio.h>
