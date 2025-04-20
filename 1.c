@@ -1,6 +1,8 @@
 ﻿#include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>  // strtolを使うために必要
+
 
 //int binary_to_decimal(const char* binary) {
 //    int decimal = 0;
@@ -31,7 +33,7 @@ void decimal_to_binary(int n) {
 	if (n > 1) {
 		decimal_to_binary(n / 2);  // 再帰的に2で割り続ける
 	}
-	printf("%d", n % 2);  // 余りを表示（最下位ビットから順に表示される）
+	printf("%d", ~n % 2);  // 余りを表示（最下位ビットから順に表示される）
 }
 
 int main(void) {
@@ -39,9 +41,31 @@ int main(void) {
 
 
 	
-	unsigned int num = 10;
-	num = num << 3;
-	decimal_to_binary(num);
+	/*unsigned int num = 10;
+	
+	decimal_to_binary(num);*/
+
+
+	
+		/*unsigned char num = 10;
+		unsigned int result = ~num & 0x0F;
+
+		printf("元の値: %u\n", num);
+		printf("反転後: %u\n", result);*/
+	const char* str_val = "0010";
+	unsigned long int dev_val = strtol(str_val, NULL, 2);
+	dev_val = ~dev_val & 0x0F;
+	dev_val = dev_val & 10;
+	printf("%lu\n", dev_val);
+
+	return 0;
+	
+	
+	//printf("%d", num);
+	
+	//decimal_to_binary(num);
+	/*num = ~num;
+	printf(num);*/
 	
 	return 0;
 	

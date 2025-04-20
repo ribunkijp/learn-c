@@ -56,3 +56,12 @@ int main() {
 }
 ```
 
+###  char  0x0F
+
+```c
+const char* str_val = "1011";
+unsigned long int dev_val = strtol(str_val, NULL, 2);
+dev_val = ~dev_val & 0x0F;
+printf("%lu\n", dev_val);
+```
+
