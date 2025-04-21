@@ -65,3 +65,33 @@ dev_val = ~dev_val & 0x0F;
 printf("%lu\n", dev_val);
 ```
 
+### &age アドレス
+
+```c
+int age;
+char name[50];
+
+printf("名前を入力してください：");
+scanf(" %s", name);
+printf("年齢を入力してください：");
+scanf("%d", &age);//ageじゃなく、&age(アドレス)
+printf("こんにちは、%sさん\n、%d歳", name, ag、e);
+```
+
+### goto scanf
+
+```c
+	int age;
+	char name[50];
+	
+start:
+
+	printf("名前を入力してください：");
+	scanf(" %s", name);
+	printf("年齢を入力してください：");
+	scanf("%d", &age);
+	if (age >= 30) goto start;
+	printf("こんにちは、%sさん\n、%d歳", name, age);
+
+```
+

@@ -117,16 +117,27 @@ int main(void) {
 	/*for (int b = 5; b > 1; b--) {
 		printf("%d", b);
 	}*/
-	int a = 10;
+	/*int a = 10;
 
 	while (a > 0) {
 		a--;
 		if ((a % 2) == 0) continue;
 		
 		printf("%d\n", a);
-	}
+	}*/
+	int age;
+	char name[50];
 	
-	
+start:
+
+	printf("名前を入力してください：");
+	scanf(" %s", name);
+	printf("年齢を入力してください：");
+	scanf("%d", &age);
+	if (age >= 30) goto start;
+	printf("こんにちは、%sさん\n、%d歳", name, age);
+
+
 
 
 	return 0;
