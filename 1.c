@@ -74,12 +74,14 @@
 		printf("%s", "<<10");
 
 	}*/
-	int i = 9;
-	i > 10 ? printf("%s", ">>10") : printf("%s", "<<10");
+	//int i = 9;
+	//i > 10 ? printf("%s", ">>10") : printf("%s", "<<10");
+
+
 	
-	return 0;
+	//return 0;
 	
-}
+//}
 //void hex_to_binary(unsigned int hex) {
 //    // 32ビットとして表示（上位ビットから）
 //    for (int i = 31; i >= 0; i--) {
@@ -96,3 +98,36 @@
 //    hex_to_binary(hex_value);
 //    return 0;
 //}
+int main(void) {
+
+	//int a = 10;
+	
+	/*while (a > 10) {
+		
+		printf("%d", a);
+		a--;
+		
+	}*/
+	/*do {
+		printf("%d", a);
+
+	} while (a > 10);
+	
+	return 0;*/
+	/*for (int b = 5; b > 1; b--) {
+		printf("%d", b);
+	}*/
+	int a = 10;
+
+	while (a > 0) {
+		a--;
+		if ((a % 2) == 0) continue;
+		
+		printf("%d\n", a);
+	}
+	
+	
+
+
+	return 0;
+}
