@@ -95,3 +95,28 @@ start:
 
 ```
 
+### continue break
+
+```c
+int a = 10;
+
+while (a > 0) {
+	a--;
+	if ((a % 2) == 0) continue;
+	
+	printf("%d\n", a);
+}
+
+breaK
+```
+
+### キーボードのASCII
+
+```c
+int ch;
+printf("キーを押してください：\n");
+ch = getchar();
+printf("押したキーのASCIIコードは: %d\n", ch);
+return 0;
+```
+

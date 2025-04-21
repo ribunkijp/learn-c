@@ -125,7 +125,7 @@ int main(void) {
 		
 		printf("%d\n", a);
 	}*/
-	int age;
+	/*int age;
 	char name[50];
 	
 start:
@@ -135,7 +135,15 @@ start:
 	printf("年齢を入力してください：");
 	scanf("%d", &age);
 	if (age >= 30) goto start;
-	printf("こんにちは、%sさん\n、%d歳", name, age);
+	printf("こんにちは、%sさん\n、%d歳", name, age);*/
+
+	/*char * a = '111';
+	printf("%s", a);*/
+	int ch;
+	printf("キーを押してください：\n");
+	ch = getchar();
+	printf("押したキーのASCIIコードは: %d\n", ch);
+	return 0;
 
 
 
