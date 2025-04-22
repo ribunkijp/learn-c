@@ -139,11 +139,15 @@ start:
 
 	/*char * a = '111';
 	printf("%s", a);*/
-	int ch;
+	/*int ch;
 	printf("キーを押してください：\n");
 	ch = getchar();
 	printf("押したキーのASCIIコードは: %d\n", ch);
-	return 0;
+	return 0;*/
+	char a = '1';
+	char b = 'B';
+
+	printf("%d", a + b);
 
 
 
