@@ -2,6 +2,7 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>  // strtolを使うために必要
+#include <limits.h>
 
 
 //int binary_to_decimal(const char* binary) {
@@ -144,13 +145,15 @@ start:
 	ch = getchar();
 	printf("押したキーのASCIIコードは: %d\n", ch);
 	return 0;*/
-	char a = '1';
+	/*char a = '1';
 	char b = 'B';
 
-	printf("%d", a + b);
+	printf("%d", a + b);*/
+	//printf("%d\n%d", INT_MAX, INT_MIN);
 
-
-
+	int a = 0x1A;
+	a = a + 10;
+	printf("%d", a);
 
 	return 0;
 }
