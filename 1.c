@@ -169,13 +169,31 @@ start:
 	//printf("%u", a);
 	/*int x = sizeof(3.14);
 	printf("%zd", x);*/
-	int val = 1;
-	/*int* x = &val;
-	*x = 2;
-	printf("%d", val);*/
-	if (val == *(&val)) {
+	//int val = 1;
+	///*int* x = &val;
+	//*x = 2;
+	//printf("%d", val);*/
+	//if (val == *(&val)) {
+	//	printf("true");
+	//}
+	
+	//int val = 3;
+	//printf("%d\n", val);
+	//p = &val;
+	//*p = 5;
+	//printf("%d", val);
+	int* p = NULL;
+	int val = 3;
+	//int val1 = 4;
+	p = &val;
+	printf("%p\n", &p);
+	printf("%d", *p);
+	/*if (&val > &val1) {
 		printf("true");
 	}
+	else {
+		printf("false");
+	}*/
 
 	return 0;
 }
