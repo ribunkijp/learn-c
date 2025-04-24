@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdlib.h>  // strtolを使うために必要
 #include <limits.h>
+#include<stdint.h>
 
 
 //int binary_to_decimal(const char* binary) {
@@ -151,9 +152,23 @@ start:
 	printf("%d", a + b);*/
 	//printf("%d\n%d", INT_MAX, INT_MIN);
 
-	int a = 0x1A;
+	/*int a = 0x1A;
 	a = a + 10;
-	printf("%d", a);
+	printf("%d", a);*/
+
+	/*if (0.1 + 0.2 == 0.3) {
+		printf("true");
+	}
+	else {
+		printf("false");
+	}*/
+
+	//unsigned int a = UINT_MAX;
+	//a++;
+	//a--;
+	//printf("%u", a);
+	/*int x = sizeof(3.14);
+	printf("%zd", x);*/
 
 	return 0;
 }
