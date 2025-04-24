@@ -169,6 +169,13 @@ start:
 	//printf("%u", a);
 	/*int x = sizeof(3.14);
 	printf("%zd", x);*/
+	int val = 1;
+	/*int* x = &val;
+	*x = 2;
+	printf("%d", val);*/
+	if (val == *(&val)) {
+		printf("true");
+	}
 
 	return 0;
 }
